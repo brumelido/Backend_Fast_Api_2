@@ -1,13 +1,13 @@
-# app/auth.py
 import jwt
 from datetime import datetime, timedelta
 from passlib.context import CryptContext
 
-# Simulação de usuário no "banco de dados"
+# Simulação de usuário no bd
 fake_user = {
     "email": "bruna@email.com",
-    "password": "$2b$12$e7Bl2N1Z/GCzMpk1Arw7deM3kF.0VReqlRPwKRXbnniLRtQhQEOhO"  # senha: 123456
+    "password": "$2b$12$LOjmVRY0W2AA5zeeakmN4e.RRabrCKgcsh8blRi7DzSLpS6qyWDFu"  # senha: 123456
 }
+
 
 SECRET_KEY = "minha-chave-secreta"
 ALGORITHM = "HS256"

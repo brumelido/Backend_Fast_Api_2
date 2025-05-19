@@ -1,28 +1,3 @@
-# # app/main.py
-# from fastapi import FastAPI, Query
-# from typing import Optional
-
-# app = FastAPI(
-#     title="Minha API Documentada com Swagger",
-#     description="Uma API simples com dois endpoints usando FastAPI e Swagger UI.",
-#     version="1.0.0"
-# )
-
-# @app.get("/")
-# def home():
-#     return {"mensagem": "API da Bruna no ar! Visite /docs para ver a documentação."}
-
-# @app.get("/hello")
-# def read_root(name: Optional[str] = Query(None, description="Nome da pessoa para cumprimentar")):
-#     if name:
-#         return {"message": f"Olá, {name}!"}
-#     return {"message": "Olá, mundo!"}
-
-# @app.get("/sum")
-# def sum_numbers(a: float = Query(..., description="Primeiro número"), b: float = Query(..., description="Segundo número")):
-#     return {"resultado": a + b}
-
-# app/main.py
 from fastapi import FastAPI, Depends, HTTPException, status, Request
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from app.auth import authenticate_user, create_access_token, decode_token
@@ -60,4 +35,4 @@ def sum_numbers(a: float, b: float, user: str = Depends(get_current_user)):
 
 @app.get("/")
 def home():
-    return {"mensagem": "API com autenticação JWT. Acesse /docs para testar."}
+    return {"mensagem": "API com autenticação JWT. Acesse http://127.0.0.1:8000/docs para testar."}

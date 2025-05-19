@@ -26,6 +26,7 @@ O objetivo foi adicionar uma camada de autenticação à API REST criada anterio
 2. Vá até o endpoint `POST /login`
 3. Clique em **"Try it out"**
 4. Informe as credenciais:
+   - `grant_type`: `password`
    - `username`: `bruna@email.com`
    - `password`: `123456`
 5. Clique em **"Execute"**
