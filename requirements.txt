@@ -2,3 +2,8 @@ fastapi
 uvicorn
 pytest
 flake8
+PyJWT
+passlib[bcrypt]
+python-multipart
+passlib[bcrypt]
+python-multipart
