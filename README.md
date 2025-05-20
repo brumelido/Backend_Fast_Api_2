@@ -2,23 +2,17 @@
 
 Este projeto foi desenvolvido como parte da disciplina **Programação de Aplicativos Mobile**, ministrada pelo professor **Ricardo Casseb**, no curso de Ciência da Computação do CESUPA.
 
----
-
 ## 🎯 Objetivo
 
 **Atividade 3 – Autenticação com JWT**
 
 O objetivo foi adicionar uma camada de autenticação à API REST criada anteriormente, utilizando o padrão JWT (JSON Web Token). Apenas usuários autenticados podem acessar rotas protegidas da aplicação.
 
----
-
 ## ✅ Funcionalidades
 
 - `POST /login`: autentica o usuário e retorna um token JWT
 - `GET /hello`: retorna uma saudação personalizada (rota protegida)
 - `GET /sum`: realiza a soma de dois números (rota protegida)
-
----
 
 ## 🔐 Como usar a autenticação
 
@@ -38,8 +32,6 @@ O objetivo foi adicionar uma camada de autenticação à API REST criada anterio
    ```
 9. Agora você pode acessar normalmente as rotas `/hello` e `/sum`
 
----
-
 ## 📦 Tecnologias utilizadas
 
 - FastAPI
@@ -47,8 +39,6 @@ O objetivo foi adicionar uma camada de autenticação à API REST criada anterio
 - passlib (bcrypt)
 - python-multipart
 - Swagger UI para testes interativos
-
----
 
 ## 👩‍💻 Autoria
 
